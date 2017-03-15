@@ -1,0 +1,120 @@
+"# mooseradio.live" >> index.html
+git init
+git add index.html
+git commit -m "index"
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>MooseRadio.Live</title>
+        <!--==== Meta Data ====-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="content type" content="text/html;charset= UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="robots" content="noodp,noydir">
+        <meta name="keywords" content="moose radio, mooseradio, mooseradio.live, moose, live, music, moose_pants, moose pants">
+
+        <link rel="canonical" href="http://mooseradio.live/" />
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+
+    <body>
+        <!--============================================ HOME =====================================================-->
+        <div id="container" z-index="500" opacity="1" onload="startup()">
+            <div id="title" align="center" z-index="200">
+                 <h1 style="color: #8B4513"><strong>Moose<span style="color: #DEB887">Radio</span></strong>.Live</h1>
+            </div>
+            <br>
+            <br>
+            <div id="loader"></div>
+            <div style="display:none;" id="loading_div">
+                <center>
+                    <img src="http://www.free-icons-download.net/images/radio-tower-icon-61209.png" height="400" width="400" z-index="400" />
+                </center>
+                <center>
+                    <div id="radio_link" z-index="500">
+                        <p style="color: #FFFFFF; font-size: 50px;" class="pulse">
+                            <br>
+                            <br><a href="javascript:show_hide('')" target="_self">Listen Live</a>
+                        </p>
+                    </div>
+                </center>
+                <br>
+                <div z-index="500" class="pulse">
+                    <img src="http://www.iconsdb.com/icons/preview/white/tv-xxl.png" width="100" height="100" align="right">
+                    <img src="http://www.iconsdb.com/icons/preview/white/pin-3-xxl.png" width="50" height="50" align="left">
+                </div>
+            </div>
+            <!--=======================================================================================================-->
+            
+            
+            <div id="audio-container">
+                <title>Moose Radio</title>
+
+                <div id="audio_div_body" style="margin:0;">
+
+                    <a href="">
+                        <img src="http://jetsetradio.live/seaman/images/closeSeamanFrameButton.png" height="100" width="100" align="right">
+                    </a>
+                    <center>
+                        <div>
+                             <h1 class="pulse"><strong>Moose <span style="color: #DEB887;">Radio</span></strong></h1>
+
+                        </div>
+                    </center>
+
+                    <br>
+                    <center>
+                        <div id="swap" class="hover">
+                            <center>
+                                <img src="http://svgshare.com/i/iV.svg" height="300" width="300" />
+                            </center>
+                        </div>
+                    </center>
+                    <!-- MEESES 
+      
+                     <img class='opaque' src="http://svgshare.com/i/hC.svg"  height="300" width="300"/> Normal Moose
+                     <img src="http://svgshare.com/i/iB.svg" height="300" width="300"/> Eastern Moose
+                     <img src="http://svgshare.com/i/iV.svg" height="300" width="300"/> Western Moose
+                     <img src="http://svgshare.com/i/iW.svg" height="300" width="300"/> Alaskan Moose
+                      -->
+
+
+                    <!--============================================ RADIO ===============================================-->
+
+                    <center>
+                        <div id="cwrap">
+                            <div id="nowPlay">
+                                 <h3 id="npAction">Paused:</h3>
+                                <div id="npTitle"></div>
+                            </div>
+                            <div id="audiowrap">
+                                <div id="audio0">
+                                    <audio id="audio1" controls="controls" width="300">Your browser does not support the HTML5 Audio Tag.
+                                    </audio>
+                                </div>
+                                <div id="extraControls">
+                                    <button id="btnPrev" class="ctrlbtn">|&lt;&lt; Prev Track</button>
+                                    <button id="btnNext" class="ctrlbtn">Next Track &gt;&gt;|</button>
+                                </div>
+                            </div>
+                            <div id="plwrap" display="none">
+                            </div>
+                        </div>
+                    </center>
+
+                    <!--==================================================================================================-->
+                    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+                    <script src="radio.js"></script>
+                    <!--==================================================================================================-->
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </body>
+
+</html>
